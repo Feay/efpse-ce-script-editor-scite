@@ -1,11 +1,28 @@
-yog is WIP to get code folding to work, scite has bad docs and no example.
-currently yog works it code folds until you start adding lines, I have tried everything
-right now it clears out the bit mask for folding when the styler is started which is after each key press
-it seems scite knows or skipps anything not directly typed in so then the matchs are ignored since they are already styled
-I GUESS
+# Easy fps Editor -> EFPSE-CE -> .script
+.Script File syntax highlight, and code folding, 
+FOR the Code Text Editor, SciTE by Scintilla
+Get it from here:
+https://sourceforge.net/projects/scintilla/files/SciTE/
 
-efpsescript works, great.lua is the lexer, multi word keywords are styled that's great, no weirdness
+https://www.scintilla.org/SciTEDownload.html
 
-of course you need to install scite, and then find it's home files in \programdata\scite and place the lexer in the lexers dir, and the properies with the rest of them
+lexers got into scitehome directory as it is called, if its a full install or you have already scite, in recent WINDOWS:
+# \programdata\scite\lexers\
+properties files got into 
+# \programdata\scite\
 
-and of course scite people liek don't exist at all. 
+protible scite will look there frist, and then if nothing exists, it will use the same directory as it self
+ergo place properies files next to the scite.exe and make a lexers folder
+
+the scite installer included in this repo is expeirimental as I coded it with ncis installer framework
+this adds option for right click menu open in scite tab or new window.
+
+SciTE is like notepad++ but less pink and smaller memory useage. 
+
+TODO:
+
+* .api file to add calltips and code completeion (a magor boon for scite and it's easy to formate one)
+* figure out a good way to call efpsce with script to text syntax, since scite supports compiler hooks
+ (that's why i use it, instant repl with python and so forth)
+* Comming soon, lexer for efpse FSM state files, or you could adjust this for that, the hard work is done thankyou
+
