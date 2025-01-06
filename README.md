@@ -26,3 +26,4 @@ TODO:
  (that's why i use it, instant repl with python and so forth)
 * Comming soon, lexer for efpse FSM state files, or you could adjust this for that, the hard work is done thankyou
 
+![image](https://github.com/user-attachments/assets/e29adcb6-7e16-4732-a984-d23bbc35178b)
